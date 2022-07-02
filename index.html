@@ -4,67 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap Offline -->
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-    <style>
-        .about .about-img .about-img-wrapper img {
-        height:60%;
-        width: 70%;
-        margin-left: 20%;
-        margin-top:5%;
-        } 
-        .about .about-img .about-img-wrapper::after {
-        position: absolute;
-        content: '';
-        right: -5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        background-color: rgba(34, 33, 33, 0.158);
-        z-index: -1;
-        }
-        .jumbotron{
-          background-image: url("profile/resul-mentes-DbwYNr8RPbg-unsplash.jpg");
-          background-size: cover;
-        }
 
-      @media only screen  and (min-width:320px) and (max-width:980px){
-        .img-thumbnail{
-          display: none;
-        }
-        .font-h1{
-          margin-top: 40px;
-          font-weight: bold;
-          font-size: 35px;
-        }
-        .about-h1{
-          font-size: 25px;
-          font-weight: bold;
-        }
-        .portfolio-h1{
-          font-size: 30px;
-          font-weight: bold;
-        }
-        .contact-h2{
-          font-size: 30px;
-          font-weight: bold;
-        }
-        .location-h1{
-          font-size: 30px;
-          font-weight: bold;
-        }
-      }
-    </style>
+    <script>
+      $(window).on('load', function() {
+        $(".preloader").fadeOut("slow");
+      });
+    </script>
+
     <title>Adli Arbariansyah</title>
     <link rel="icon" href="profile/Adli Arbariansyah.png">
 </head>
 <body>
-    
+    <div class="preloader">
+      <div class="loading">
+        <div rule="status">
+          <img src="profile/PVtR.gif" width="300" >
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info mb-3 margin-navbar">
         <div class="container"> 
           <marquee width="15%" direction="left"><a class="navbar-brand" href="index.html">ADLI ARBARIANSYAH</a></marquee>
@@ -237,7 +205,3 @@
 
 </body>
 </html>
-
-
-
-
